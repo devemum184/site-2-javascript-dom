@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cursor"></div>
+
+    <header>
+        <nav>
+            <button class="nav-btn active" data-page="home">Главная</button>
+            <button class="nav-btn" data-page="about">О нас</button>
+            <button class="nav-btn" data-page="contact">Контакты</button>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section class="page active" id="home">
+            <h1>Главная страница</h1>
+            <p>Подвигайте мышкой по экрану и нажмите на любую клавишу.</p>
+            <div class="animation-box"></div>
+        </section>
+
+        <section class="page" id="about">
+            <h1>О нас</h1>
+            <p>Здесь тоже работает анимация курсора и клавиатуры.</p>
+            <div class="animation-box"></div>
+        </section>
+
+        <section class="page" id="contact">
+            <h1>Контакты</h1>
+            <p>Кастомный курсор следует за вашей мышью.</p>
+            <div class="animation-box"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
